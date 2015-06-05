@@ -1,0 +1,61 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box
+}
+
+.container{
+	background: rgb(250, 250, 250);
+  height: 100vh;
+  position: relative;
+}
+
+.clock{
+	position: absolute;
+    top: 50;
+    translate-y:-50;
+    font-size:200px;
+    top: 170px;
+    left:240px;
+    color:white;
+    display:block
+}
+
+.hours{
+	display:inline-block;
+}
+
+.minutes{
+	display:inline-block;
+}
+
+.seconds{
+	display:inline-block;
+}
+
+.color{
+	position: absolute;
+    top: 50;
+    translate-y:-50;
+    font-size:200px;
+    top: 170px;
+    left:240px;
+    color:white;
+    display:hidden
+
+}
+.hidden {
+	display: none;
+}
+
+.color1{
+	display:inline-block;
+}
+
+.color2{
+	display:inline-block;
+}
+
+.color3{
+	display:inline-block;
+}
