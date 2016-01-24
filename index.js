@@ -47,7 +47,7 @@ $(document).on("ready", function(){
 
 
     var currentTime = moment()
-    $(".clock").text(currentTime.format("hh:mm:ss"))
+    $(".clock").text(currentTime.format("HH:mm:ss"))
 
     var seconds = currentTime.seconds()
     var blueColor = convertTimeframe(seconds, "seconds")
@@ -66,9 +66,9 @@ $(document).on("ready", function(){
     $(".color").text(RGBToHex(redColor).substring(0, 2) + ":" + RGBToHex(greenColor).substring(0, 2) + ":" + blueColor)
 
 //*This will not have colons within the hex codes written out.
-    $(".container").css("background-color", "rgb(" + RGBToHex(redColor).substring(0, 2) + "," + greenColor + "," + blueColor + ")")
+    $(".container").css("background-color", "rgb(" + redColor + "," + greenColor + "," + blueColor + ")")
 
-
+    $(".underline").css("width", seconds + "%")
 
   }
     setInterval(updated, 1000);

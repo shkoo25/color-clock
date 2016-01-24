@@ -5,20 +5,28 @@ box-sizing: border-box
 }
 
 .container{
-	background: rgb(250, 250, 250);
-  height: 100vh;
-  position: relative;
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+    position: relative;
+    font-family:Tahoma, Geneva, sans-serif;
 }
 
 .clock{
 	position: absolute;
-    top: 50;
     translate-y:-50;
     font-size:200px;
     top: 170px;
     left:240px;
     color:white;
-    display:block
+    display:block;
+}
+
+.underline{
+    border-bottom:solid 3px white;
+    position:absolute;
+    top: 390px;
+    left:260px;
+    display:block;
 }
 
 .hours{
@@ -35,7 +43,6 @@ box-sizing: border-box
 
 .color{
 	position: absolute;
-    top: 50;
     translate-y:-50;
     font-size:200px;
     top: 170px;
